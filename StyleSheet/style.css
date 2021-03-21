@@ -1,0 +1,44 @@
+:root {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  box-sizing: inherit;
+  color: black;
+  font-family: "Nunito", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.static-icons {
+  width: 1.5rem;
+}
+
+.bottom-navigation {
+  position: fixed;
+  bottom: 0;
+  padding: 0.5rem;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
