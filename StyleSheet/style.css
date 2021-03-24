@@ -1,6 +1,7 @@
 :root {
   --princes: "Princess Sofia", cursive;
-  --burlywood: burlywood;
+  --burlywood: #e4c59b;
+  --burlywood-hover: #cf964b;
   font-size: 16px;
   padding: 0;
   margin: 0;
@@ -15,6 +16,7 @@
 }
 
 body {
+  height: 100rem;
   box-sizing: inherit;
   color: black;
   font-family: "Nunito", sans-serif;
@@ -41,17 +43,21 @@ body {
 
 a {
   text-decoration: none;
-}
-
-.logo-container .logo__item {
-  font-family: var(--princes);
-  color: var(--burlywood);
-  font-size: 2rem;
+  outline: none;
+  color: inherit;
 }
 
 .top-navigation {
   padding-bottom: 0.5rem;
   box-shadow: 0 0 5px 0.5px rgba(0, 0, 0, 0.46);
+  width: 100%;
+  position: fixed;
+}
+
+.logo-container .logo__item {
+  font-family: var(--princes);
+  color: var(--burlywood);
+  font-size: 1.5rem;
 }
 
 .search-container {
@@ -61,35 +67,74 @@ a {
 
 input {
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 0.7rem;
 }
 
 input[name="search"] {
   width: 100%;
+  height: 100%;
   padding: 0.5rem;
   outline: none;
   border: 0.1rem var(--burlywood) solid;
   border-radius: 1.5rem;
+  background: #efdcc33a;
+}
+
+input[name="search"]:focus {
+  border: 0.1rem var(--burlywood-hover) solid;
 }
 
 input[name="search-submit"] {
   position: absolute;
-  width: fit-content;
   padding: 0.3rem;
   height: 100%;
   background: var(--burlywood);
   border-radius: 0 1.5rem 1.5rem 0;
   border: 0.1rem var(--burlywood) solid;
   right: 0;
+  cursor: pointer;
+}
+
+input[name="search-submit"]:hover,
+input[name="search-submit"]:focus {
+  border: 0.1rem var(--burlywood-hover) solid;
 }
 
 .bottom-navigation {
   position: fixed;
   bottom: 0;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   width: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
   text-align: center;
   box-shadow: 0 0 5px 0.5px rgba(0, 0, 0, 0.46);
+}
+
+.page__link:hover {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
+    brightness(104%) contrast(97%);
+}
+
+.active {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
+    brightness(104%) contrast(97%);
+}
+
+@media screen and (min-width: 600px) {
+  .top-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .bottom-navigation {
+    display: none;
+  }
+
+  .search-container {
+    width: 25rem;
+    margin: 0;
+  }
 }
