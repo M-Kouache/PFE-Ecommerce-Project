@@ -16,7 +16,6 @@
 }
 
 body {
-  height: 100rem;
   box-sizing: inherit;
   color: black;
   font-family: "Nunito", sans-serif;
@@ -56,7 +55,7 @@ ul li {
   padding-bottom: 0.5rem;
   box-shadow: 0 0 5px 0.5px rgba(0, 0, 0, 0.46);
   width: 100%;
-  position: fixed;
+  background: #fff;
 }
 
 .logo-container {
@@ -66,7 +65,7 @@ ul li {
 .logo-container .logo__item {
   font-family: var(--princes);
   color: var(--burlywood);
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .page__link {
@@ -147,6 +146,25 @@ input[name="search-submit"]:focus {
   box-shadow: 0 0 5px 0.5px rgba(0, 0, 0, 0.46);
 }
 
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.356);
+  transition-duration: 5s;
+}
+
+.hero-section-video {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+}
+
 @media screen and (min-width: 900px) {
   .top-section {
     display: flex;
@@ -176,5 +194,9 @@ input[name="search-submit"]:focus {
   input[name="search"],
   input[name="search-submit"] {
     font-size: medium;
+  }
+
+  .hero-section {
+    height: 80vh;
   }
 }
