@@ -3,6 +3,7 @@
   --burlywood: #e4c59b;
   --burlywood-hover: #cf964b;
   --light-gray: #efdcc33a;
+  --Dim-gray: #6d6d64;
   --white: #fff;
   font-size: 16px;
   padding: 0;
@@ -190,4 +191,20 @@ input[name="search-submit"]:focus {
   min-width: 100%;
   min-height: 100%;
   transform: translate(-50%, -50%);
+}
+
+.product-container-header {
+  padding: 4rem 0;
+}
+
+.product-container-header h1 {
+  width: 15%;
+  text-align: center;
+  color: var(--Dim-gray);
+  margin: 0 2rem;
+}
+
+.separater-line {
+  border-top: 1px var(--Dim-gray) solid;
+  width: 45%;
 }
