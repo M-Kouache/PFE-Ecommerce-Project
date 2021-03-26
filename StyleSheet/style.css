@@ -194,11 +194,12 @@ input[name="search-submit"]:focus {
 }
 
 .product-container-header {
-  padding: 4rem 0;
+  padding: 1rem 0;
 }
 
 .product-container-header h1 {
-  width: 15%;
+  width: 30%;
+  font-size: 0.8rem;
   text-align: center;
   color: var(--Dim-gray);
   margin: 0 2rem;
@@ -206,5 +207,5 @@ input[name="search-submit"]:focus {
 
 .separater-line {
   border-top: 1px var(--Dim-gray) solid;
-  width: 45%;
+  width: 40%;
 }
