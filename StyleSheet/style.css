@@ -91,6 +91,14 @@ ul li {
   background: var(--secondary-hover);
 }
 
+.product-price {
+  color: var(--secondary-dark);
+}
+
+.product-name {
+  color: var(--primary-hover);
+}
+
 .top-navigation {
   padding-bottom: 0.5rem;
   box-shadow: 0 0 5px 0.5px rgba(0, 0, 0, 0.46);
@@ -218,7 +226,7 @@ input[name="search-submit"]:focus {
 
 .product-container-header {
   justify-content: space-between;
-  padding: 2rem 0;
+  padding: 2.5rem 0;
 }
 
 .product-container-header h1 {
@@ -229,16 +237,13 @@ input[name="search-submit"]:focus {
 }
 
 .separater-line {
-  border-top: 1px var(--black) solid;
+  border-top: 2px var(--primary) solid;
   width: 30%;
 }
 
 .products-container {
   width: 100%;
   padding: 0.5rem 1.5rem;
-}
-
-.product-card {
 }
 
 .product-image-container img {

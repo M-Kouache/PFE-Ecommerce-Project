@@ -46,12 +46,21 @@
     min-height: 100%;
   }
 
+  .product-container-header {
+    padding: 4rem 0;
+  }
+
   .product-container-header h1 {
     width: fit-content;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .separater-line {
     width: 40%;
+  }
+
+  .products-container {
+    width: 100%;
+    padding: 0.5rem 10rem;
   }
 }
