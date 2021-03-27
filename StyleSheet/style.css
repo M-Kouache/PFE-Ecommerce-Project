@@ -1,5 +1,6 @@
 :root {
-  --princes: "Princess Sofia", cursive;
+  --primary-font: "Nunito", sans-serif;
+  --secodary-font: "Princess Sofia", cursive, sans-serif;
   --primary: #e4c59b;
   --primary-hover: #cf964b;
   --primary-light: #ffe9e0;
@@ -26,7 +27,7 @@
 body {
   box-sizing: inherit;
   color: black;
-  font-family: "Nunito", sans-serif;
+  font-family: var(--primary-font);
   padding: 0;
   margin: 0;
 }
@@ -44,12 +45,27 @@ body {
   flex-direction: column;
 }
 
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
 .meduim-icons {
   width: 1.2rem;
 }
 
 .larg-icons {
   width: 2rem;
+}
+
+h1,
+h2,
+h3,
+h5,
+a,
+p {
+  font-family: var(--primary-font);
 }
 
 a {
@@ -87,7 +103,7 @@ ul li {
 }
 
 .logo-container .logo__item {
-  font-family: var(--princes);
+  font-family: var(--secodary-font);
   color: var(--primary);
   font-size: 2rem;
 }
@@ -215,4 +231,21 @@ input[name="search-submit"]:focus {
 .separater-line {
   border-top: 1px var(--black) solid;
   width: 40%;
+}
+
+.products-container {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+}
+
+.product-card {
+}
+
+.product-image-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product-image-container img:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
