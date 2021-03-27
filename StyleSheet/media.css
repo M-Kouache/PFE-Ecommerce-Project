@@ -47,9 +47,8 @@
   }
 
   .product-container-header h1 {
-    width: 20%;
+    width: fit-content;
     font-size: 1.5rem;
-    margin: 0 4rem;
   }
 
   .separater-line {
