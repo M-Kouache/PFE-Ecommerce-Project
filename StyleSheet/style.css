@@ -188,6 +188,7 @@ input[name="search-submit"]:focus {
 
 .bottom-navigation {
   position: fixed;
+  z-index: 1;
   bottom: 0;
   padding: 0.5rem 1rem;
   width: 100%;
