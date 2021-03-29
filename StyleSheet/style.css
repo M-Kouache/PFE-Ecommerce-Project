@@ -203,7 +203,6 @@ input[name="search-submit"]:focus {
   width: 100%;
   height: 40vh;
   overflow: hidden;
-  /* background: rgba(0, 0, 0, 0.6); */
   background: var(--primary);
 }
 
@@ -287,22 +286,35 @@ input[name="search-submit"]:focus {
 }
 
 .product-gallery {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 300px;
+  gap: 1px;
   width: 100%;
-  gap: 0;
   padding: 0 1rem;
 }
 
-.product-gallery div {
-  background: rgba(0, 0, 0, 0.6);
+.gl-img-container {
+  position: relative;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
 }
 
-.product-gallery div img {
+.gl-img-container img {
   position: relative;
   z-index: -1;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
-.product-gallery div:hover {
-  background: none;
+.gl-img-container h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--white);
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }

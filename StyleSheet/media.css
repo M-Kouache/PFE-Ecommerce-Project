@@ -72,7 +72,11 @@
   }
 
   .product-gallery {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    padding: 0 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 0 15rem;
+  }
+
+  .wide-img {
+    grid-column: span 2 / auto;
   }
 }
