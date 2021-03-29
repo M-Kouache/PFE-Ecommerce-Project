@@ -70,4 +70,9 @@
   .product-image-container {
     height: 200px;
   }
+
+  .product-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 0 5rem;
+  }
 }

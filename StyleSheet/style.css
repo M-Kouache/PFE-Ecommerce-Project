@@ -285,3 +285,24 @@ input[name="search-submit"]:focus {
   width: 100%;
   height: 240px;
 }
+
+.product-gallery {
+  width: 100%;
+  gap: 0;
+  padding: 0 1rem;
+}
+
+.product-gallery div {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.product-gallery div img {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.product-gallery div:hover {
+  background: none;
+}
