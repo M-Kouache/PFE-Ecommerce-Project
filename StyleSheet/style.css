@@ -3,7 +3,7 @@
   --secodary-font: "Princess Sofia", cursive, sans-serif;
   --primary: #e4c59b;
   --primary-hover: #cf964b;
-  --primary-light: #ffe9e0;
+  --primary-light: rgb(228, 197, 155, 0.5);
   --primary-dark: #e5aa6f;
   --secondary: #ac8f68;
   --secondary-hover: #ac8f68cb;
@@ -27,7 +27,7 @@
 
 body {
   box-sizing: inherit;
-  color: black;
+  color: var(--black);
   font-family: var(--primary-font);
   padding: 0;
   margin: 0;
@@ -199,39 +199,50 @@ input[name="search-submit"]:focus {
 }
 
 .hero-section {
-  justify-content: space-evenly;
+  flex-direction: column;
   position: relative;
   width: 100%;
-  height: 40vh;
+  height: fit-content;
   overflow: hidden;
   background: var(--primary);
 }
 
-.hero-section img {
+.hero-text-erea {
+  flex-direction: column;
+  justify-content: center;
   position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  background: var(--primary-light);
+}
+
+.hero-text-erea h1 {
   width: 100%;
-  height: auto;
-}
-
-.hero-section h1 {
   font-size: 1.5rem;
-  color: var(--black);
-  text-shadow: 5px 5px 50px black;
-  text-align: center;
-  animation-name: head;
-  animation-duration: 2s;
+  color: var(--brown);
+  margin-bottom: 1.5rem;
 }
 
-.product-container-header {
+.hero-video-erea {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-video-erea video {
+  width: 100%;
+  height: 100%;
+}
+
+.sections-header-container {
   justify-content: space-between;
   padding: 2.5rem 0;
 }
 
-.product-container-header h1 {
-  width: fit-content;
+.sections-header-container h1 {
   font-size: 1.2rem;
   text-align: center;
   color: var(--brown);
@@ -245,7 +256,6 @@ input[name="search-submit"]:focus {
 .products-container {
   width: 100%;
   padding: 0.5rem 1.5rem;
-  margin: 2rem 0;
 }
 
 .product-card {
@@ -274,11 +284,12 @@ input[name="search-submit"]:focus {
 }
 
 .product-image-container img:hover {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 .banner {
   width: 100%;
+  margin: 2rem 0;
 }
 
 .banner img {
@@ -311,11 +322,43 @@ input[name="search-submit"]:focus {
 .gl-img-container h1 {
   font-size: 2.5rem;
   text-transform: uppercase;
-  color: var(--white);
+  -webkit-text-stroke: 1px var(--white);
+  -webkit-text-fill-color: black;
   width: 100%;
   text-align: center;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+footer {
+  width: 100%;
+  margin-top: 4rem;
+  padding: 4rem 2rem;
+  text-align: center;
+  background: var(--primary);
+}
+
+.ft-description-erea {
+  width: 50%;
+  color: var(--brown);
+}
+
+.ft-description-erea h1 {
+  font-size: 4rem;
+  padding: 2rem 0;
+}
+
+.ft-description-erea h1 span {
+  font-family: var(--secodary-font);
+}
+
+.ft-description-erea h3 {
+  font-size: 2.5rem;
+  padding: 1.5rem 0;
+}
+
+.ft-description-erea p {
+  font-size: 1.5rem;
 }
