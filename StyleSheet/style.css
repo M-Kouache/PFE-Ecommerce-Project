@@ -95,7 +95,7 @@ ul li {
 
 /* this margin is applyed for elements under top-nav-bar */
 .custom-margin {
-  margin: 8rem 0;
+  margin-top: 5.5rem;
 }
 
 .product-price {
@@ -136,8 +136,8 @@ ul li {
 }
 
 .page__link:hover {
-  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
-    brightness(104%) contrast(97%);
+  filter: invert(15%) sepia(65%) saturate(1543%) hue-rotate(316deg)
+    brightness(90%) contrast(94%);
 
   transform: scale(1.1);
   transition-duration: 0.4s;
@@ -257,10 +257,11 @@ input[name="search-submit"]:focus {
 
 .sections-header-container {
   justify-content: space-between;
-  padding: 2.5rem 0;
+  padding: 2rem 0;
 }
 
 .sections-header-container h1 {
+  width: 60%;
   font-size: 1.2rem;
   text-align: center;
   color: var(--brown);
@@ -387,14 +388,25 @@ footer {
 
 /* Catigories Page */
 
+.main-section {
+  align-items: flex-start;
+  margin-bottom: 5rem;
+}
+
+.cat {
+  margin-left: 5rem;
+}
+
+.cat h1 {
+  font-size: 1rem;
+}
+
 .products-catigories {
   position: fixed;
   width: 5rem;
   top: 5.6rem;
   height: 80%;
-  padding: 5px 0;
   overflow: auto;
-  background: #fbfbfb;
 }
 
 .category {
@@ -403,11 +415,13 @@ footer {
   text-align: center;
   padding: 0.5rem;
   border-bottom: 0.1rem var(--primary-light) solid;
+  border-right: 0.1rem var(--primary-light) solid;
   font-size: 1rem;
 }
 
 .products-container-catigories {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
   margin-left: 5rem;
   padding: 0 1rem;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
