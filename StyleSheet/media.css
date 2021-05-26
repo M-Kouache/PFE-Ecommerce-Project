@@ -47,7 +47,7 @@
 
   .hero-section {
     position: relative;
-    margin-top: 6.5rem;
+    margin-top: 6rem;
     height: 80vh;
   }
 
@@ -106,7 +106,7 @@
 
   footer {
     margin-bottom: 0;
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
   }
 
   .ft-description-erea {
@@ -141,6 +141,7 @@
     height: 100%;
     padding: 0 2rem;
     overflow: auto;
+    border-right: 0.1rem var(--primary-light) solid;
     background: none;
   }
 
@@ -155,7 +156,6 @@
   }
 
   .category:hover {
-    border-radius: 5px;
     border-bottom: 0.1rem var(--primary-light) solid;
   }
 
