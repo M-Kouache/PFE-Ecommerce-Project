@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&family=Princess+Sofia&display=swap");
 :root {
   --blue: #4e73df;
   --indigo: #6610f2;
@@ -38,4 +40,5 @@
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: "Nunito", SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
+  --princess-sofia: "Princess Sofia", cursive;
 }

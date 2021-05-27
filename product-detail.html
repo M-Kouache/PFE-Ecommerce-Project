@@ -44,24 +44,24 @@
         </div>
     </nav>
     <nav class="bottom-navigation flex">
-        <a href="index.html" id="link_tag"   class="page__link active" >
-            <img class="meduim-icons" id="bottom-nav-icon" src="assets/svgs/home.svg" alt="home-page-icon">
-            <h5>home</h5>
-        </a>
-        <a href="cat.html" class="page__link" >
-            <img class="meduim-icons" id="bottom-nav-icon" src="assets/svgs/catigories.svg" alt="catigories-page-icon">
-            <h5>catigories</h5>            
-        </a>
-        <a href="#" id="link_tag"  class="page__link" >
-            <img class="meduim-icons" id="bottom-nav-icon"  src="assets/svgs/shopping-cart.svg" alt="AddToCart-page-icon">
-            <h5>Cart</h5>
-        </a>
-        <a href="login.html" id="link_tag"  class="page__link" >
-            <img class="meduim-icons" id="bottom-nav-icon" src="assets/svgs/user-acount.svg" alt="acount-page-icon">
-            <h5>Acount</h5>
-        </a>
-      </nav>
-    </header>
+      <a href="index.html" id="link_tag"   class="page__link " >
+          <img class="meduim-icons" id="bottom-nav-icon" src="assets/svgs/home.svg" alt="home-page-icon">
+          <h5>home</h5>
+      </a>
+      <a href="cat.html" class="page__link " >
+          <img class="meduim-icons" id="bottom-nav-icon" src="assets/svgs/catigories.svg" alt="catigories-page-icon">
+          <h5>catigories</h5>            
+      </a>
+      <a href="cart.html" id="link_tag"  class="page__link" >
+          <img class="meduim-icons" id="bottom-nav-icon"  src="assets/svgs/shopping-cart.svg" alt="AddToCart-page-icon">
+          <h5>Cart</h5>
+      </a>
+      <a href="login.html" id="link_tag"  class="page__link" >
+          <img class="meduim-icons" id="bottom-nav-icon" src="assets/svgs/user-acount.svg" alt="acount-page-icon">
+          <h5>Acount</h5>
+      </a>
+    </nav>
+  </header>
 
     <div class = "card-wrapper custom-margin">
       <div class = "card">
@@ -130,10 +130,9 @@
           </div>
 
           <div class = "purchase-info">
-            <button type = "button" class = "btn">
+            <a href="cart.html"  class = "btn" style="background: var(--primary); color: var(--secodary);">
               Add to Cart <i class = "fas fa-shopping-cart"></i>
-            </button>
-            <button type = "button" class = "btn">Compare</button>
+            </a>
           </div>
 
           <div class = "social-links">
@@ -157,7 +156,8 @@
         </div>
       </div>
     </div>
-    <section class="main-section ">
+
+  <section class="main-section" >
       <div class="sections-header-container flex ">
             <div class="separater-line"></div>
             <h1>More To See</h1>
@@ -222,7 +222,7 @@
                 <h3 class="product-price">500.67 $</h3>
             </a>
       </div>
-
+    </section>
     
     <script src="Scripts/script.js"></script>
   </body>
