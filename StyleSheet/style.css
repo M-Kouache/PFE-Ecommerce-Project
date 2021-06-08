@@ -345,6 +345,10 @@ footer {
   background: var(--primary);
 }
 
+.btn-footer {
+  padding: 0.5rem 4rem;
+}
+
 .ft-description-erea {
   width: 100%;
   color: var(--brown);

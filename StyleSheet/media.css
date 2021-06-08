@@ -109,6 +109,10 @@
     padding: 3rem 2rem;
   }
 
+  .btn-footer {
+    padding: 0.5rem 8rem;
+  }
+
   .ft-description-erea {
     width: 50%;
     color: var(--brown);
