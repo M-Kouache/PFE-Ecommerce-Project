@@ -259,17 +259,25 @@ input[name="search-submit"]:focus {
 .products-container-home {
   width: 100%;
   padding: 0.5rem 1.5rem;
+  margin-bottom: 0.6rem;
 }
 
 .product-card {
-  height: 300px;
+  height: 100%;
   flex-direction: column;
-  overflow: hidden;
+  text-align: center;
+  border-radius: 0.4rem;
+}
+
+.product-card:hover {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 .product-image-container {
   width: 100%;
   height: 80%;
+  border-radius: 0.4rem;
+  overflow: hidden;
 }
 
 .product-image-container img {
@@ -284,10 +292,6 @@ input[name="search-submit"]:focus {
   overflow: hidden;
   width: 100%;
   text-overflow: ellipsis;
-}
-
-.product-image-container img:hover {
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 .banner {
